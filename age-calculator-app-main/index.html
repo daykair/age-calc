@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="font" href="/assets/fonts/Poppins-Regular.ttf" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+    <section class="date">
+      <div class="flex">
+        <p class="" id="day-p">Dia</p>
+        <input class="" id="day" type="number" placeholder="DD" max="31" min="1" />
+        <span id="day-error" class="errors"></span>
+      </div>
+      <div class="flex">
+        <p id="month-p" >Mes</p>
+        <input id="month" type="number" placeholder="MM" max="12" min="1" />
+        <span id="month-error" class="errors"></span>
+      </div>
+      <div class="flex">
+        <p id="year-p">Año</p>
+        <input id="year" type="number" placeholder="YYYY" max="2023" min="1" />
+        <span id="year-error" class="errors"></span>
+      </div>
+    </section>
+    <div class="linea">
+      <img class="hola" src="/assets/images/icon-arrow.svg" alt="flecha">
+    </div>
+    <section class="date-result">
+      <h2><span class="result" id="year-result">--</span> años</h2>
+      <h2><span class="result" id="month-result">--</span> meses</h2>
+      <h2><span class="result" id="days-result">--</span> dias</h2>
+    </section>
+   </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Daykair</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

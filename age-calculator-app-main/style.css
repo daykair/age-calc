@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+  font-weight: 600;
+  font-style: Bold;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins-BoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(233, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.date {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 35px
+}
+
+.date p {
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%); 
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  letter-spacing: 3px;
+}
+
+input {
+  width: 80px;
+  border: 1px solid rgb(194, 194, 194, 0.6);
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 12px 15px;
+  font-size: 18px;
+  outline: none;
+}
+
+.main-container {
+  background-color: white;
+  width: 550px;
+  height: auto;
+  margin: auto;
+  padding: 30px 40px 5px 40px;
+  border-radius: 20px 20px 120px 20px;
+}
+
+.linea {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(194, 194, 194, 0.6);
+  position: relative;
+}
+
+img {
+  width: 28px;
+  height: 28px;
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  padding: 18px;
+  border-radius: 50%;
+}
+
+.date-result {
+  font-size: 50px;
+  line-height: 0.3;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+.result {
+  color: hsl(259, 100%, 65%);
+  transition: all 0.1s ease-in;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.error {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.error-p {
+  color: hsl(0, 100%, 67%) !important ; 
+} 
+
+.errors {
+  font-size: 10px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 100%, 67%);
+}
+
